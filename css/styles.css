@@ -95,7 +95,6 @@ img {
   background-position: 50% 0%;
   background-size: 80%;
   background-repeat: no-repeat;
-  min-height: 100px;
 }
 
 #hero .herotext {
@@ -118,11 +117,15 @@ img {
 
 #hero .laptop {
   display: none;
-  height: 450px;
+  overflow-x: hidden;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
-  -webkit-transform-origin: -80em 2%;
-          transform-origin: -80em 2%;
+  -webkit-transform-origin: -80em -50em;
+          transform-origin: -80em -50em;
+}
+
+#hero img {
+  height: 350px;
 }
 
 #about .card1 {
@@ -135,7 +138,7 @@ img {
 
 #about .card2 {
   margin: 20% 1%;
-  padding: 50px 10px;
+  padding: 59px 10px;
   background-color: #74818E;
 }
 
@@ -219,11 +222,142 @@ img {
 
 footer {
   bottom: 0;
-  padding: 5%;
+  padding: 1em;
   background-color: #38373d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 footer p {
   line-height: 1.9em;
+}
+
+@media only screen and (min-width: 700px) {
+  #hero {
+    padding-top: 25%;
+    padding-bottom: 5%;
+    background-size: 60%;
+    background-position: 1% 0%;
+  }
+  #hero .herotext {
+    margin-left: 10%;
+  }
+  #hero .laptop {
+    display: block;
+  }
+  #about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #about .card1 {
+    font-size: 30px;
+    position: absolute;
+    width: 55%;
+    height: 6em;
+  }
+  #about .card1 h1 {
+    position: relative;
+  }
+  #about .card2 {
+    font-size: 22px;
+    position: relative;
+    right: 0;
+    left: 41%;
+    width: 58%;
+    margin-bottom: 5em;
+  }
+  #pricing {
+    padding-bottom: 5em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #pricing .basic {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  #pricing .premium {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding-left: 10%;
+  }
+  footer .rights {
+    margin-right: auto;
+  }
+  footer .contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 30%;
+  }
+  footer .contact > * + * {
+    margin-left: 1%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  #hero .herotext {
+    margin-left: 5%;
+  }
+  #hero .laptop {
+    -webkit-transform-origin: -110em -110em;
+            transform-origin: -110em -110em;
+  }
+  #hero img {
+    height: 400px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #hero {
+    background-position: 1% -9%;
+    padding-top: 23%;
+  }
+  #hero .herotext {
+    font-size: 40px;
+  }
+  #hero .laptop {
+    -webkit-transform-origin: -125em -110em;
+            transform-origin: -125em -110em;
+  }
+  #hero img {
+    height: 470px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  #hero {
+    background-position: 1% -4em;
+    padding-top: 20%;
+  }
+  #hero .herotext {
+    margin-left: 0%;
+  }
+  #hero .laptop {
+    -webkit-transform-origin: -135em -170em;
+            transform-origin: -135em -170em;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
