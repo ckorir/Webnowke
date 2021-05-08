@@ -41,7 +41,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #38373d;
+  background-color: #2e2e30;
 }
 
 .navcontainer .logo {
@@ -70,6 +70,7 @@ img {
 .navcontainer .navlinks {
   display: none;
   padding-right: 5%;
+  width: 30%;
 }
 
 .navcontainer .navlinks ul {
@@ -79,7 +80,7 @@ img {
 }
 
 .navcontainer .navlinks li {
-  padding-right: 25%;
+  padding-right: 21%;
 }
 
 #hero {
@@ -100,6 +101,10 @@ img {
 #hero .herotext {
   font-size: 30px;
   text-align: center;
+}
+
+#hero .herotext span {
+  font-size: 80px;
 }
 
 #hero .herotext .more {
@@ -150,7 +155,7 @@ img {
 
 #about .card2 .cardtext:before {
   content: "";
-  width: 4px;
+  width: 8px;
   height: 4.5em;
   position: relative;
   left: 5%;
@@ -168,6 +173,7 @@ img {
 }
 
 #about .card2 button {
+  margin-top: 5%;
   margin-left: 10%;
   border-radius: 16px;
   border: none;
@@ -220,10 +226,85 @@ img {
   text-align: center;
 }
 
+.formcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10% 0%;
+  margin: auto;
+}
+
+.formcontainer .back {
+  display: none;
+}
+
+.formcontainer .contactform {
+  width: 100%;
+  margin: auto;
+}
+
+.formcontainer .contactform form {
+  width: 100%;
+  margin: auto;
+}
+
+.formcontainer .contactform form h1 {
+  text-align: center;
+}
+
+.formcontainer .contactform form h2 {
+  margin-left: 10%;
+  margin-bottom: -45%;
+  margin-top: 7%;
+  padding-bottom: 15px;
+}
+
+.formcontainer .contactform form label {
+  position: relative;
+  margin-bottom: -70%;
+  margin-left: 10%;
+}
+
+.formcontainer .contactform form input, .formcontainer .contactform form textarea {
+  padding: 15px;
+  border-radius: 7px;
+  background-color: rgba(212, 226, 236, 0.411);
+  text-align: left;
+  border: thin;
+  margin-left: 10%;
+  margin-top: 40%;
+  width: 80%;
+}
+
+.formcontainer .contactform form textarea {
+  resize: none;
+  padding: 30px 0px;
+}
+
+.formcontainer .contactform form button {
+  background-color: #5772B0;
+  margin: 5% 15%;
+  left: 0.1em;
+  width: 70%;
+  padding: 10px 0px;
+  border-radius: 16px;
+  border: none;
+  color: rgba(255, 255, 255, 0.788);
+  font-weight: 400;
+  font-size: 0.7em;
+}
+
+.formcontainer .contactform form button:hover {
+  background-color: #4a66b6c7;
+}
+
 footer {
   bottom: 0;
   padding: 1em;
-  background-color: #38373d;
+  background-color: #2e2e30;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -238,7 +319,7 @@ footer p {
   line-height: 1.9em;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 750px) {
   #hero {
     padding-top: 25%;
     padding-bottom: 5%;
@@ -246,7 +327,7 @@ footer p {
     background-position: 1% 0%;
   }
   #hero .herotext {
-    margin-left: 10%;
+    margin-left: 5.3%;
   }
   #hero .laptop {
     display: block;
@@ -315,6 +396,40 @@ footer p {
   footer .contact > * + * {
     margin-left: 1%;
   }
+  #contactpage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+  #contactpage .back {
+    display: block;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    padding-top: 0;
+    margin-top: 0%;
+    background-image: url("../img/contact.jpg");
+    background-position: 10% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #contactpage .formcontainer {
+    overflow-y: hidden;
+    padding: 0%;
+    width: 100%;
+    margin: 0%;
+  }
+  #contactpage .formcontainer .contactform {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+    margin: 0%;
+    padding-top: 10%;
+  }
+  #contactpage .formcontainer .contactform form {
+    margin: 0%;
+    padding: 0%;
+  }
 }
 
 @media only screen and (min-width: 900px) {
@@ -327,6 +442,12 @@ footer p {
   }
   #hero img {
     height: 400px;
+  }
+  #contactpage .formcontainer .contactform {
+    padding-top: 5%;
+  }
+  #contactpage .formcontainer .contactform h2 {
+    margin-top: 8%;
   }
 }
 
@@ -344,6 +465,10 @@ footer p {
   }
   #hero img {
     height: 470px;
+  }
+  #contactpage .formcontainer .contactform h2 {
+    margin-top: 7%;
+    padding-bottom: 22px;
   }
 }
 
