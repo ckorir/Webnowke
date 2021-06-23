@@ -4,7 +4,7 @@
 
 .navcontainer{
     display: flex;
-    padding: 1% 5%;
+    padding: 15px 5%;
     align-items: center;
     background-color: #2e2e30;
    
@@ -58,6 +58,10 @@
     .herotext{
         font-size: 30px;
         text-align: center;
+
+        h2{
+            line-height: 2em;
+        }
 
         span{
             font-size: 80px;
