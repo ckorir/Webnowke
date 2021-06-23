@@ -366,6 +366,7 @@ footer p {
     top: 0px;
   }
   .navcontainer .navlinks li {
+    padding: 12px;
     padding-right: 21%;
   }
   #hero {
