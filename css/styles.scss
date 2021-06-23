@@ -7,6 +7,17 @@
     padding: 15px 5%;
     align-items: center;
     background-color: #2e2e30;
+
+    .close{
+       img{
+           height: 2em;
+           position: absolute;
+           right: 10px;
+           top: 25px;
+           display: none;
+           z-index: 1100;
+       }
+    }
    
     .logo{
         display: flex;
@@ -28,16 +39,25 @@
     }
 
     .navlinks{
+        
         display: none;
         padding-right: 5%;
         width: 30%;
         ul{
+            padding: 40px;
+            background: #74818E;
+            position: absolute;
+            top: 75px;
+            right: 1px;
             display: flex;
-            
+            flex-direction: column;
+            z-index: 1000;
+            //width: 50%;
         }
 
         li{
-            padding-right: 21%;
+            padding: 20px;
+            //padding-right: 10%;
         }
         
     }
@@ -271,6 +291,29 @@ footer{
 }
 
 @media only screen and (min-width: 750px){
+    .navcontainer{
+        .close{
+            display: none;
+        }
+
+        .burger{
+            display: none;
+        }
+
+        .navlinks{
+            display: block;
+            padding-right: 5%;
+            width: 30%;
+            ul{
+                display: flex;
+                
+            }
+
+            li{
+                padding-right: 21%;
+            }
+        }
+    }
     #hero{
         padding-top: 25%;
         padding-bottom: 5%;
