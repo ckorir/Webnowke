@@ -355,9 +355,15 @@ footer p {
     width: 30%;
   }
   .navcontainer .navlinks ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    padding: 0px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    background-color: transparent;
+    padding-right: 55%;
+    position: relative;
+    top: 0px;
   }
   .navcontainer .navlinks li {
     padding-right: 21%;
