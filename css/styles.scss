@@ -43,6 +43,7 @@
         display: none;
         padding-right: 5%;
         width: 30%;
+
         ul{
             padding: 40px;
             background: #74818E;
@@ -90,7 +91,6 @@
         .more{
             align-content: center;
             color: #7D8B9A; 
-            transition: .5s;
             
             .arrow{
                 position: absolute;
@@ -157,6 +157,8 @@
             padding: 10px 20px;
             background-color: #2c5de256;
             color: #C2C2C2;
+            cursor: pointer;
+            transition: all 5s ease;
         }
     }
 }
